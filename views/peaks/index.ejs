@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+     <!-- <link rel="stylesheet" href="/css/app.css"> -->
+ </head>
+   <body>
+    <header>
+
+     <h1>Welcome to BIG PEAKS</h1>
+       <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/peaks/new">Add a New Peak</a></li>
+
+
+        </ul>
+      </nav>
+     </header> <!-- header -->
+
+<main>
+  <h2>list of peaks</h2>
+  <ul>
+    <% for (let i = 0; i < peaks.length; i++) {  %>
+    <li><a href="/peaks/<%=peaks[i].id%>"><%=peaks[i].name%></a></li>
+    <li>Name: <%=peaks[i].name%></li>
+    <li>Height: <%=peaks[i].height%></li>
+    <li>Location: <%=peaks[i].location%></li>
+    <li>FirstAscent: <%=peaks[i].firstAscent%></li>
+    <% } %>
+
+</ul>
+
+   </body>
+</html>

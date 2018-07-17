@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>Edit Tall Ones Page</h1>
+
+  <form action="/peaks/<%= peaks.id %>?_method=PUT" method="POST">
+    Name: <input type="text" name="name" value="<%= peaks.name %>">
+    Height: <input type="text" name="height" value="<%= peaks.height %>">
+    Location: <input type="text" name="location" value="<%= peaks.location %>">
+    firstAscent: <input type="text" name="firstAscent" value="<%= peaks.firstAscent %>">
+    <br/>
+    <button type="submit">Update Peak</button>
+  </form>
+  <br/>
+</body>
+</html>
